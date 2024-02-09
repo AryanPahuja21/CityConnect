@@ -7,6 +7,9 @@ import Calendar from './Components/Calendar';
 import Events from './Components/Events'
 import Crime from './Components/Crime'
 import Report from './Components/Report'
+import SignIn from './Components/SignIn'
+import SignUp from './Components/SignUp'
+import AmenitiesGuide from './Components/AmenitiesGuide'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Route path='/calendar' element={<Calendar/>}></Route>
           <Route path='/crime' element={<Crime/>}></Route>
           <Route path='/crime/report' element={<Report/>}></Route>
+          <Route path='/signin' element={<SignIn/>}></Route>
+          <Route path='/signup' element={<SignUp/>}></Route>
+          <Route path='/amenities' element={<AmenitiesGuide/>}></Route>
         </Routes>
       </Router>
       <Footer/>
