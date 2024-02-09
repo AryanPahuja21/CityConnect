@@ -1,16 +1,20 @@
-import React from 'react';
-import Navbar from './Components/Navbar'; 
-import HeroSection from './Components/heroSection'; 
+import React from "react";
+import Header from "./components/Header.jsx";
+import HeroSection from "./components/heroSection";
+import Navbar from "./components/Navbar.jsx";
+import ServicePage from "./pages/service.jsx";
+import Footer from "./components/Footer.jsx";
 function App() {
-  
   return (
     <>
-    <div className=''>
-      <Navbar />
-      <HeroSection />
-    </div>
+      <div className="">
+        <Navbar />
+        <ServicePage />
+        {/* <HeroSection /> */}
+        <Footer />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
