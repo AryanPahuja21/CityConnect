@@ -2,7 +2,7 @@ import { Typography, Grid, Stack, Box, Divider } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { grey } from "@mui/material/colors";
 
-import MyCard from "../components/CardLayout.jsx";
+import MyCard from '../Components/CardLayout.jsx';
 import Transport from "../assets/service/transport.jpg";
 import Energy from "../assets/service/energy.jpg";
 import Healthcare from "../assets/service/healthcare.jpg";
