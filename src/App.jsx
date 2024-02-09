@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Components/Navbar'; 
 import HeroSection from './Components/heroSection'; 
 // import ServicePage from "./pages/service.jsx";
-// import Footer from "./Components/Footer";
+import Footer from "./Components/Footer";
 import Calendar from './Components/Calendar';
 import Events from './Components/Events'
 import Crime from './Components/Crime'
@@ -22,7 +22,7 @@ function App() {
           <Route path='/crime/report' element={<Report/>}></Route>
         </Routes>
       </Router>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
     </>
   );
