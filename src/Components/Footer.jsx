@@ -29,7 +29,7 @@ const theme = createTheme({
 
 function Footer() {
   return (
-    <div className='mt-24'>
+    <div className='mt-12'>
     <ThemeProvider theme={theme}>
       <Box
         sx={{

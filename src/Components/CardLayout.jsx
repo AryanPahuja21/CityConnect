@@ -30,14 +30,12 @@ function CardLayout({ header, point1, point2, point3, point4 }) {
           <Typography variant="h5" component="h5">
             {header}
           </Typography>
-          <ul>
-            <Typography variant="body1" component="div" color="secondary">
-              <li>{point1}</li>
-              <li>{point2}</li>
-              <li>{point3}</li>
-              <li>{point4}</li>
-            </Typography>
-          </ul>
+          <Typography variant="body1" component="div" color="secondary">
+            <li>{point1}</li>
+            <li>{point2}</li>
+            <li>{point3}</li>
+            <li>{point4}</li>
+          </Typography>
         </CardContent>
         <CardActions>
           <Button

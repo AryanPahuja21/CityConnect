@@ -24,9 +24,12 @@ import {
   WrenchScrewdriverIcon,
   CalendarDaysIcon,
   HomeModernIcon,
+  ArrowRightStartOnRectangleIcon
 } from "@heroicons/react/24/solid";
-import { Link } from 'react-router-dom';
- 
+
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import LoginIcon from '@mui/icons-material/Login';
+
 // profile menu component
 const profileMenuItems = [
   {
@@ -50,12 +53,12 @@ const profileMenuItems = [
     icon: PowerIcon,
   },
 ];
- 
+
 function ProfileMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
- 
+
   const closeMenu = () => setIsMenuOpen(false);
- 
+
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
       <MenuHandler>
@@ -111,36 +114,46 @@ function ProfileMenu() {
     </Menu>
   );
 }
- 
+
 // nav list component
 const navListItems = [
   {
     label: "Events",
     icon: CalendarDaysIcon,
-    route: '/events'
+    route: "/events",
   },
   {
     label: "Services",
     icon: WrenchScrewdriverIcon,
-    route: '/services'
+    route: "/services",
   },
   {
     label: "Discussion",
     icon: ChatBubbleBottomCenterTextIcon,
-    route: '/discussion'
+    route: "/discussion",
   },
   {
     label: "Amenities",
     icon: HomeModernIcon,
-    route: '/amenities'
+    route: "/amenities",
   },
   {
     label: "Report a Crime",
     icon: ExclamationTriangleIcon,
-    route: '/crime'
+    route: "/crime",
   },
+  {
+    label: "sign in",
+    icon: ArrowRightStartOnRectangleIcon,
+    route: "/signin",
+  },
+  {
+    label: "sign up",
+    icon: UserCircleIcon,
+    route: "/signup",
+  }
 ];
- 
+
 function NavList() {
   return (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center ">
@@ -162,25 +175,25 @@ function NavList() {
     </ul>
   );
 }
- 
+
 export default function ComplexNavbar() {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
- 
+
   const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
- 
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setIsNavOpen(false),
+      () => window.innerWidth >= 960 && setIsNavOpen(false)
     );
   }, []);
- 
+
   return (
     <Navbar className="mx-auto max-w-screen-xl p-4 lg:rounded-full lg:pl-6 mt-2 bg-gray-100">
       <div className="relative mx-auto flex items-center justify-between text-blue-gray-900 ">
         <Typography
           as="a"
-          href="#"
+          href="/"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-bold "
         >
           CityConnect
