@@ -9,7 +9,7 @@ import Crime from "./Components/Crime";
 import Report from "./Components/Report";
 import SignUp from "./Components/SignUp.jsx";
 import SignIn from "./Components/SignIn.jsx";
-import MyAccordion from "./Components/MyAccordion.jsx";
+import AmenitiesGuide from "./Components/AmenitiesGuide.jsx";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
@@ -27,6 +27,7 @@ function App() {
             <Route path="/crime/report" element={<Report />}></Route>
             <Route path="/signin" element={<SignIn />}></Route>
             <Route path="/signup" element={<SignUp />}></Route>
+            <Route path="/amenities" element={<AmenitiesGuide />} ></Route>
           </Routes>
         </Router>
         <Footer />
