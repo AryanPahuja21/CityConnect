@@ -1,15 +1,15 @@
 import React from "react";
-import HeroSection from "./components/heroSection";
-import Navbar from "./components/Navbar.jsx";
+import HeroSection from './Components/heroSection.jsx';
+import Navbar from './Components/Navbar.jsx';
 import ServicePage from "./pages/service.jsx";
-import Footer from "./components/Footer.jsx";
+import Footer from './Components/Footer.jsx';
 function App() {
   return (
     <>
       <div className="">
         <Navbar />
         <ServicePage />
-        {/* <HeroSection /> */}
+       
         <Footer />
       </div>
     </>
