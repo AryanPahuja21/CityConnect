@@ -29,6 +29,7 @@ const theme = createTheme({
 
 function Footer() {
   return (
+    <div className='mt-24'>
     <ThemeProvider theme={theme}>
       <Box
         sx={{
@@ -183,6 +184,7 @@ function Footer() {
         </Grid>
       </Box>
     </ThemeProvider>
+    </div>
   );
 }
 

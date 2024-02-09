@@ -13,18 +13,20 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import {
-  CubeTransparentIcon,
   UserCircleIcon,
-  CodeBracketSquareIcon,
-  Square3Stack3DIcon,
   ChevronDownIcon,
   Cog6ToothIcon,
   InboxArrowDownIcon,
   LifebuoyIcon,
   PowerIcon,
-  RocketLaunchIcon,
   Bars2Icon,
+  ExclamationTriangleIcon,
+  ChatBubbleBottomCenterTextIcon,
+  WrenchScrewdriverIcon,
+  CalendarDaysIcon,
+  HomeModernIcon,
 } from "@heroicons/react/24/solid";
+import { Link } from 'react-router-dom';
  
 // profile menu component
 const profileMenuItems = [
@@ -148,7 +150,7 @@ function NavListMenu() {
  
   return (
     <React.Fragment>
-      <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
+      {/* <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
           <Typography as="a" href="#" variant="small" className="font-normal">
             <MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full">
@@ -166,7 +168,7 @@ function NavListMenu() {
         <MenuList className="grid grid-cols-2 gap-3">
           {renderItems}
         </MenuList>
-      </Menu>
+      </Menu> */}
     </React.Fragment>
   );
 }
@@ -174,16 +176,25 @@ function NavListMenu() {
 // nav list component
 const navListItems = [
   {
-    label: "Account",
-    icon: UserCircleIcon,
+    label: "Events",
+    icon: CalendarDaysIcon,
+    route: '/events'
   },
   {
-    label: "Blocks",
-    icon: CubeTransparentIcon,
+    label: "Services",
+    icon: WrenchScrewdriverIcon,
   },
   {
-    label: "Docs",
-    icon: CodeBracketSquareIcon,
+    label: "Discussion",
+    icon: ChatBubbleBottomCenterTextIcon,
+  },
+  {
+    label: "Amenities",
+    icon: HomeModernIcon,
+  },
+  {
+    label: "Report a Crime",
+    icon: ExclamationTriangleIcon,
   },
 ];
  
@@ -191,8 +202,8 @@ function NavList() {
   return (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center ">
       <NavListMenu />
-      {navListItems.map(({ label, icon }, key) => (
-        <a href="#" key={key}>
+      {navListItems.map(({ label, icon, route }, key) => (
+        <a href="/" key={key}>
           <Typography
             as="span"
             variant="small"
@@ -245,9 +256,9 @@ export default function ComplexNavbar() {
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
  
-        <Button size="sm" variant="text">
+        {/* <Button size="sm" variant="text">
           <span>Log In</span>
-        </Button>
+        </Button> */}
         <ProfileMenu />
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">
