@@ -9,22 +9,23 @@ import {
   MenuList,
   MenuItem,
   Avatar,
-  Card,
   IconButton,
 } from "@material-tailwind/react";
 import {
-  CubeTransparentIcon,
   UserCircleIcon,
-  CodeBracketSquareIcon,
-  Square3Stack3DIcon,
   ChevronDownIcon,
   Cog6ToothIcon,
   InboxArrowDownIcon,
   LifebuoyIcon,
   PowerIcon,
-  RocketLaunchIcon,
   Bars2Icon,
+  ExclamationTriangleIcon,
+  ChatBubbleBottomCenterTextIcon,
+  WrenchScrewdriverIcon,
+  CalendarDaysIcon,
+  HomeModernIcon,
 } from "@heroicons/react/24/solid";
+import { Link } from 'react-router-dom';
  
 // profile menu component
 const profileMenuItems = [
@@ -111,88 +112,40 @@ function ProfileMenu() {
   );
 }
  
-// nav list menu
-const navListMenuItems = [
-  {
-    title: "@material-tailwind/html",
-    description:
-      "Learn how to use @material-tailwind/html, packed with rich components and widgets.",
-  },
-  {
-    title: "@material-tailwind/react",
-    description:
-      "Learn how to use @material-tailwind/react, packed with rich components for React.",
-  },
-  {
-    title: "Material Tailwind PRO",
-    description:
-      "A complete set of UI Elements for building faster websites in less time.",
-  },
-];
- 
-function NavListMenu() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
- 
-  const renderItems = navListMenuItems.map(({ title, description }) => (
-    <a href="#" key={title}>
-      <MenuItem>
-        <Typography variant="h6" color="blue-gray" className="mb-1">
-          {title}
-        </Typography>
-        <Typography variant="small" color="gray" className="font-normal">
-          {description}
-        </Typography>
-      </MenuItem>
-    </a>
-  ));
- 
-  return (
-    <React.Fragment>
-      <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
-        <MenuHandler>
-          <Typography as="a" href="#" variant="small" className="font-normal">
-            <MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full">
-              <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "}
-              Pages{" "}
-              <ChevronDownIcon
-                strokeWidth={2}
-                className={`h-3 w-3 transition-transform ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-            </MenuItem>
-          </Typography>
-        </MenuHandler>
-        <MenuList className="grid grid-cols-2 gap-3">
-          {renderItems}
-        </MenuList>
-      </Menu>
-    </React.Fragment>
-  );
-}
- 
 // nav list component
 const navListItems = [
   {
-    label: "Account",
-    icon: UserCircleIcon,
+    label: "Events",
+    icon: CalendarDaysIcon,
+    route: '/events'
   },
   {
-    label: "Blocks",
-    icon: CubeTransparentIcon,
+    label: "Services",
+    icon: WrenchScrewdriverIcon,
+    route: '/services'
   },
   {
-    label: "Docs",
-    icon: CodeBracketSquareIcon,
+    label: "Discussion",
+    icon: ChatBubbleBottomCenterTextIcon,
+    route: '/discussion'
+  },
+  {
+    label: "Amenities",
+    icon: HomeModernIcon,
+    route: '/amenities'
+  },
+  {
+    label: "Report a Crime",
+    icon: ExclamationTriangleIcon,
+    route: '/crime'
   },
 ];
  
 function NavList() {
   return (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center ">
-      <NavListMenu />
-      {navListItems.map(({ label, icon }, key) => (
-        <a href="#" key={key}>
+      {navListItems.map(({ label, icon, route }, key) => (
+        <a href={route} key={key}>
           <Typography
             as="span"
             variant="small"
@@ -244,10 +197,6 @@ export default function ComplexNavbar() {
         >
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
- 
-        <Button size="sm" variant="text">
-          <span>Log In</span>
-        </Button>
         <ProfileMenu />
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">
