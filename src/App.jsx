@@ -1,13 +1,14 @@
 import React from 'react';
 import Navbar from './Components/Navbar'; 
 import HeroSection from './Components/heroSection'; 
+// import ServicePage from "./pages/service.jsx";
+// import Footer from "./Components/Footer";
 import Calendar from './Components/Calendar';
 import Events from './Components/Events'
 import Crime from './Components/Crime'
 import Report from './Components/Report'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
-  
   return (
     <>
     <div className=''>
@@ -21,9 +22,10 @@ function App() {
           <Route path='/crime/report' element={<Report/>}></Route>
         </Routes>
       </Router>
+      {/* <Footer/> */}
     </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
