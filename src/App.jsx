@@ -9,6 +9,7 @@ import Crime from './Components/Crime'
 import Report from './Components/Report'
 import SignIn from './Components/SignIn'
 import SignUp from './Components/SignUp'
+import AmenitiesGuide from './Components/AmenitiesGuide'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/crime/report' element={<Report/>}></Route>
           <Route path='/SignIn' element={<SignIn/>}></Route>
           <Route path='/SignUp' element={<SignUp/>}></Route>
+          <Route path='/AmenitiesGuide' element={<AmenitiesGuide/>}></Route>
         </Routes>
       </Router>
       {/* <Footer/> */}
