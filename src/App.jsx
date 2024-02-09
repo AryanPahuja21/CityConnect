@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./components/Header.jsx";
 import HeroSection from "./components/heroSection";
 import Navbar from "./components/Navbar.jsx";
 import ServicePage from "./pages/service.jsx";
