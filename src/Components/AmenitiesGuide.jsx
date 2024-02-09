@@ -2,7 +2,7 @@ import React from 'react';
 
 const AmenitiesGuide = () => {
   const amenities = [
-    { name: 'Hotel', description: 'Find nearby hotels for your stay.', imageUrl: 'https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg?w=996&t=st=1707482726~exp=1707483326~hmac=1f88d07eca4a2797e54e62888ef93dc095f6787666c449332279822ef6c19116' },
+    { name: 'Hotel', description: 'Find nearby hotels for your stay.', imageUrl: 'https://img.freepik.com/free-vector/flat-hotel-facade-background_23-2148157465.jpg?t=st=1707486825~exp=1707487425~hmac=7cc0aba3857e33b7af71d7c190cae99f839ce2dfef1e9addf697e87353c22c32' },
     { name: 'Restaurant', description: 'Discover local dining options.', imageUrl: 'https://img.freepik.com/free-vector/restaurant-facade-background_23-2147673396.jpg?w=740&t=st=1707482772~exp=1707483372~hmac=9f11f7de428840b7d69b8c414e631f76c188a60fc42b3407032e8189aeb61a57' },
     { name: 'Cafe', description: 'Enjoy a cup of coffee or tea.', imageUrl: 'https://img.freepik.com/free-vector/isometric-business-lunch-people-colored-composition_1284-24397.jpg?w=740&t=st=1707481240~exp=1707481840~hmac=54ea8ce0d82f1118ff74524d999ad9ae65130bb887a003aa88e1255af02f602c' },
     { name: 'Police Station', description: 'Guardians of community safety and security.', imageUrl: 'https://img.freepik.com/free-vector/cartoon-police-station-building-with-patrol-cars_107791-15791.jpg?w=1060&t=st=1707481735~exp=1707482335~hmac=7cf861cc6e1ae33a1e57b81a54d6439709a0d1487817eb0860ea92d0c24cfeed' },
