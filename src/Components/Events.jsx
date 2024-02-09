@@ -63,7 +63,7 @@ const Events = () => {
     return (
       <div className="mx-auto">
         <div>
-          <Card className="max-w-[20vw] rounded-t-lg scale-100 hover:scale-110" imgAlt={price} imgSrc={image}>
+          <Card className="max-w-[20vw] transition-transform duration-300 hover:shadow-2xl hover:shadow-blue-500  rounded-t-lg scale-100 hover:scale-105" imgAlt={price} imgSrc={image}>
             <a href="/">
               <h5 className="text-xl font-semibold tracking-tight text-gray-900">
                 {name}
@@ -132,7 +132,7 @@ const Events = () => {
   };
   return (
     <>
-      <h1 className="w-fit mx-auto p-7 text-7xl font-bold">Upcoming Events</h1>
+      <h1 className="w-fit mx-auto pt-10 text-7xl font-bold">Upcoming Events In The City</h1>
       <div className="container p-20 mx-auto">
         <div className="flex flex-wrap gap-x-20 gap-y-10 justify-center ">
           {data.map((i, index) => (

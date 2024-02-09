@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 const Crime = () => {
   return (
     <div className="grid grid-cols-2 items-center mx-24 gap-[15vw]">
-        <div className='w-[40vw] my-44'>
-            <img className='w-full' src={Cover} alt="" />
+        <div className='w-[40vw] my-20'>
+            <img className='w-full rounded-2xl' src={Cover} alt="" />
         </div>
         <div>
       <h1 className='text-7xl font-extrabold'>Facing Injustice?</h1>

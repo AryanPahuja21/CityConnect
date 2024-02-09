@@ -27,9 +27,9 @@ function Service() {
     <ThemeProvider theme={theme}>
       <Box sx={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
         <Typography variant="h4" component="h4" textAlign="center">
-          smart city services
+          SMART CITY SERVICES
         </Typography>
-        <Divider sx={{ bgcolor: "gray" }} />
+        <Divider sx={{ bgcolor: "white" }} />
         {/* <Container maxWidth="lg">
           <MyCarousel />
         </Container> */}

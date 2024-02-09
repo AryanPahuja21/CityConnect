@@ -1,92 +1,67 @@
+import React from "react";
 import {
   Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Typography,
-  Stack,
-} from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
-function MyAccordion() {
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
+ 
+export default function AccordionCustomStyles() {
+  const [open, setOpen] = React.useState(1);
+ 
+  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+ 
   return (
-    <Stack spacing={1}>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+    <>
+    <div className="m-10">
+    <Accordion open={open === 1} className="mb-2 rounded-2xl border border-blue-gray-100 px-4 ">
+        <AccordionHeader
+          onClick={() => handleOpen(1)}
+          className={`border-b-0 transition-colors ${
+            open === 1 ? "text-blue-500 hover:!text-blue-700" : ""
+          }`}
         >
-          <Typography variant="body1" component="div">
-            What is a smart city?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography variant="subtitle1" component="div">
-            A smart city leverages technology and data to improve the quality of
+          What is a smart city?
+        </AccordionHeader>
+        <AccordionBody className="pt-0 text-base font-normal">
+        A smart city leverages technology and data to improve the quality of
             life for residents, enhance sustainability, and optimize urban
             services such as transportation, energy, and public safety
-          </Typography>
-        </AccordionDetails>
+        </AccordionBody>
       </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+      <Accordion open={open === 2} className="mb-2 rounded-lg border border-blue-gray-100 px-4">
+        <AccordionHeader
+          onClick={() => handleOpen(2)}
+          className={`border-b-0 transition-colors ${
+            open === 2 ? "text-blue-500 hover:!text-blue-700" : ""
+          }`}
         >
-          <Typography variant="body1" component="div">
-            What technologies are typically used in a smart city?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography variant="subtitle1" component="div">
-            Smart cities utilize a variety of technologies such as Internet of
+         What technologies are typically used in a smart city?
+        </AccordionHeader>
+        <AccordionBody className="pt-0 text-base font-normal">
+        Smart cities utilize a variety of technologies such as Internet of
             Things (IoT) sensors, data analytics, artificial intelligence (AI),
             cloud computing, and communication networks to gather and analyze
             data for better decision-making and resource optimization.
-          </Typography>
-        </AccordionDetails>
+        </AccordionBody>
       </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+      <Accordion open={open === 3} className="rounded-lg border border-blue-gray-100 px-4">
+        <AccordionHeader
+          onClick={() => handleOpen(3)}
+          className={`border-b-0 transition-colors ${
+            open === 3 ? "text-blue-500 hover:!text-blue-700" : ""
+          }`}
         >
-          <Typography variant="body1" component="div">
-            How does a smart city address environmental sustainability? options.
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography variant="subtitle" component="div">
-            Smart cities integrate sustainable practices into urban planning and
+         How does a smart city address environmental sustainability? options.
+        </AccordionHeader>
+        <AccordionBody className="pt-0 text-base font-normal">
+        Smart cities integrate sustainable practices into urban planning and
             development, such as promoting renewable energy sources, reducing
             carbon emissions, implementing green infrastructure, optimizing
             waste management, and encouraging eco-friendly transportation
-          </Typography>
-        </AccordionDetails>
+        </AccordionBody>
       </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography variant="body1" component="div">
-            Who can I contact if I have more questions about our smart city's
-            initiatives?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography variant="subtitle1" component="div">
-            You can reach out to the relevant city departments or agencies
-            responsible for smart city projects, or contact our customer service
-            team for assistance and inquiries.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-    </Stack>
+    </div>
+      
+    </>
   );
 }
-
-export default MyAccordion;

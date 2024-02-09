@@ -43,7 +43,7 @@ const Report = () => {
 
   const CardP = ({ title, desc }) => {
     return (
-      <Card className="max-w-sm m-7 scale-100 hover:scale-105">
+      <Card className="max-w-sm m-7 transition-transform duration-300 hover:shadow-xl hover:shadow-blue-100 rounded-xl scale-100 hover:scale-105 shadow-md ">
         <h5 className="text-2xl font-bold tracking-tight text-gray-900 m-3">
           {title}
         </h5>
@@ -54,7 +54,7 @@ const Report = () => {
   };
   return (
     <div>
-      <h1 className="w-fit mx-auto text-5xl font-bold mt-4">
+      <h1 className="w-fit mx-auto text-5xl font-bold m-10">
         Reportable Crimes: Speak Up, Take Action
       </h1>
       <div className="grid grid-cols-3">

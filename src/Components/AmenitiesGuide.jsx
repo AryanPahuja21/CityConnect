@@ -17,7 +17,7 @@ const AmenitiesGuide = () => {
   return (
     <div className="container mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {amenities.map((amenity, index) => (
-        <div key={index} className="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col justify-between">
+        <div key={index} className="bg-gray-100 p-4  transition-transform duration-300 hover:shadow-l hover:shadow-blue-500 rounded-xl scale-100 hover:scale-105 shadow-md flex flex-col justify-between">
           <div>
             <img src={amenity.imageUrl} alt={amenity.name} className="w-full h-40 object-cover rounded-lg mb-4" />
             <h2 className="text-lg font-semibold mb-2">{amenity.name}</h2>
