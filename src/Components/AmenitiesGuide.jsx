@@ -1,7 +1,6 @@
 import React from 'react';
 
 const AmenitiesGuide = () => {
-  // Define amenities data
   const amenities = [
     { name: 'Hotel', description: 'Find nearby hotels for your stay.', imageUrl: 'https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg?w=996&t=st=1707482726~exp=1707483326~hmac=1f88d07eca4a2797e54e62888ef93dc095f6787666c449332279822ef6c19116' },
     { name: 'Restaurant', description: 'Discover local dining options.', imageUrl: 'https://img.freepik.com/free-vector/restaurant-facade-background_23-2147673396.jpg?w=740&t=st=1707482772~exp=1707483372~hmac=9f11f7de428840b7d69b8c414e631f76c188a60fc42b3407032e8189aeb61a57' },
