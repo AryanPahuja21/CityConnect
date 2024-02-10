@@ -1,7 +1,7 @@
 import React from "react";
 import MyAccordion from "./MyAccordion";
 import { Box } from "@mui/material";
-
+import WhyCityConnect from './WhyCityConnect.jsx';
 const HeroSection = () => {
   return (
     <>
