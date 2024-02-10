@@ -31,7 +31,7 @@ function App() {
             <Route path="/amenities" element={<AmenitiesGuide />} ></Route>
           </Routes>
         </Router>
-        <WhyCityConnect/>
+        
         <Footer />
       </div>
     </>
