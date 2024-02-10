@@ -14,14 +14,14 @@ const HeroSection = () => {
                 Welcome to
                 <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white">
                   {" "}
-                  CityConnect
+                  CitySync
                 </span>
                 : Your Gateway to Smarter City Living
               </h1>
               <p className="mt-10 text-lg text-gray-300 dark:text-gray-400">
-                At CityConnect, we're dedicated to empowering residents and
+                At CitySync, we're dedicated to empowering residents and
                 building a more connected community. Through our innovative
-                CityConnect app, we're transforming urban living by facilitating
+                CitySync app, we're transforming urban living by facilitating
                 seamless access to city services, enhancing safety and security,
                 promoting green spaces, and fostering sustainability. Join us in
                 shaping the future of our city, one connection at a time.

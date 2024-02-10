@@ -196,7 +196,7 @@ export default function ComplexNavbar() {
           href="/"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-bold text-lg text-blue-800"
         >
-          CityConnect
+          CitySync
         </Typography>
         <div className="hidden lg:block">
           <NavList />

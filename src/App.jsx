@@ -10,7 +10,7 @@ import Report from "./Components/Report";
 import SignUp from "./Components/SignUp.jsx";
 import SignIn from "./Components/SignIn.jsx";
 import AmenitiesGuide from "./Components/AmenitiesGuide.jsx";
-import WhyCityConnect from "./Components/WhyCityConnect.jsx";
+
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {

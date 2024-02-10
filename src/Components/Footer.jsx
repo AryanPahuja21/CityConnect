@@ -13,10 +13,7 @@ const SITEMAP = [
     title: "Resources",
     links: ["Blog", "Newsletter", "Free Products", "Affiliate Program"],
   },
-  {
-    title: "Products",
-    links: ["Templates", "UI Kits", "Icons", "Mockups"],
-  },
+  
 ];
  
 const currentYear = new Date().getFullYear();
