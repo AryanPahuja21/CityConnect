@@ -18,12 +18,12 @@ CitySync is a website dedicated to promoting the concept of smart cities and sho
 
 ## Getting Started
 
-To get started with CitySync, visit our website at [www.citysync.com](https://www.citysync.com) and explore the various features and resources available.
+To get started with CitySync, visit our website at [www.citysync.com](https://city-connect.vercel.app/) and explore the various features and resources available.
 
 ## Contributing
 
-We welcome contributions from the community to help improve CitySync and make it even more valuable for residents. If you have ideas for new features, suggestions for improvements, or would like to report any issues, please [submit an issue](https://github.com/Rohitk131/CitySync/issues) or [create a pull request](https://github.com/Rohitk131/CitySync/pulls) on our GitHub repository.
+We welcome contributions from the community to help improve CitySync and make it even more valuable for residents. If you have ideas for new features, suggestions for improvements, or would like to report any issues, please [submit an issue](https://github.com/Rohitk131/CityConnect/issues) or [create a pull request](https://github.com/Rohitk131/CityConnect/pulls) on our GitHub repository.
 
 ## Support
 
-For any questions, feedback, or support inquiries, please contact our team at support@citysync.com.
+For any questions, feedback, or support inquiries, please contact our team at rohitkumargdsc@gmail.com
