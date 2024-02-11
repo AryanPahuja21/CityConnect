@@ -49,7 +49,7 @@ const Forum = () => {
   };
 
   return (
-    <div className="container mx-auto p-10 bg-yellow-400 rounded-3xl p-10 mt-10 mb-10">
+    <div className="container shadow-2xl shadow-gray-500 mx-auto p-10 bg-yellow-400 rounded-3xl p-10 mt-10 mb-10">
       <h1 className="text-4xl font-bold mb-8">Post what you saw in the city</h1>
       <ThreadList
         threads={threads}
@@ -89,7 +89,7 @@ const Thread = ({ thread, removeThread, editThread, addReply, removeReply }) => 
   };
 
   return (
-    <div className="border p-10 rounded-2xl">
+    <div className="border p-10 rounded-2xl shadow-2xl shadow-black">
       {editMode ? (
         <>
           <input
