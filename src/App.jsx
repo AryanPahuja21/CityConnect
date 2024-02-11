@@ -10,6 +10,7 @@ import Report from "./Components/Report";
 import SignUp from "./Components/SignUp.jsx";
 import SignIn from "./Components/SignIn.jsx";
 import AmenitiesGuide from "./Components/AmenitiesGuide.jsx";
+import Discussion from "./Components/discussion.jsx";
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -29,6 +30,7 @@ function App() {
             <Route path="/signin" element={<SignIn />}></Route>
             <Route path="/signup" element={<SignUp />}></Route>
             <Route path="/amenities" element={<AmenitiesGuide />} ></Route>
+            <Route path="/discussion" element={<Discussion/>} ></Route>
           </Routes>
         </Router>
         

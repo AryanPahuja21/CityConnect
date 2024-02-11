@@ -70,7 +70,9 @@ const HeroSection = () => {
       <Box
         sx={{ marginTop: "2rem", paddingLeft: "10px", paddingRight: "10px" }}
       >
+        
         <WhyCityConnect/>
+    
         <MyAccordion />
       </Box>
     </>
