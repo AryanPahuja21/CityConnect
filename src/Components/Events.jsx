@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "flowbite-react";
-import { Button } from './ui/movingborder';
+import { Button } from "./ui/movingborder";
+import { Link } from 'react-router-dom'
 const Events = () => {
   const data = [
     {
@@ -61,10 +62,13 @@ const Events = () => {
 
   const CardP = ({ name, price, image }) => {
     return (
-     
       <div className="mx-auto">
         <div>
-          <Card className="max-w-[20vw] transition-transform duration-300 hover:shadow-2xl hover:shadow-blue-500  rounded-t-lg scale-100 hover:scale-105" imgAlt={price} imgSrc={image}>
+          <Card
+            className="max-w-[20vw] transition-transform duration-300 hover:shadow-2xl hover:shadow-blue-500  rounded-t-lg scale-100 hover:scale-105"
+            imgAlt={price}
+            imgSrc={image}
+          >
             <a href="/">
               <h5 className="text-xl font-semibold tracking-tight text-gray-900">
                 {name}
@@ -133,16 +137,21 @@ const Events = () => {
   };
   return (
     <>
-     <div className="flex justify-center mt-10">
-  <Button
-    borderRadius="1.75rem"
-    className="bg-blue-300 dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-  >
-    Add your event
-  </Button>
-</div>
+    <Link to='/ownevent'>
 
-      <h1 className="w-fit mx-auto pt-10 text-7xl font-bold">Upcoming Events In The City</h1>
+      <div className="flex justify-center mt-10">
+        <Button
+          borderRadius="1.75rem"
+          className="bg-blue-200 dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+          >
+          Add your event
+        </Button>
+      </div>
+    </Link>
+
+      <h1 className="w-fit mx-auto pt-10 text-7xl font-bold">
+        Upcoming Events In The City
+      </h1>
       <div className="container p-20 mx-auto">
         <div className="flex flex-wrap gap-x-20 gap-y-10 justify-center ">
           {data.map((i, index) => (

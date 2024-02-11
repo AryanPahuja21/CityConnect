@@ -11,7 +11,7 @@ import SignUp from "./Components/SignUp.jsx";
 import SignIn from "./Components/SignIn.jsx";
 import AmenitiesGuide from "./Components/AmenitiesGuide.jsx";
 import Discussion from "./Components/discussion.jsx";
-
+import OwnEvent from "./Components/ownEvent.jsx";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
@@ -31,6 +31,7 @@ function App() {
             <Route path="/signup" element={<SignUp />}></Route>
             <Route path="/amenities" element={<AmenitiesGuide />} ></Route>
             <Route path="/discussion" element={<Discussion/>} ></Route>
+            <Route path="/ownevent" element={<OwnEvent/>} ></Route>
           </Routes>
         </Router>
         
