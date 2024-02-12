@@ -137,17 +137,21 @@ const Events = () => {
   };
   return (
     <>
-    <Link to='/ownevent'>
 
       <div className="flex justify-center mt-10">
-        <Button
+        <Link to='/ownevent'><Button
           borderRadius="1.75rem"
           className="bg-blue-200 dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           >
           Add your event
-        </Button>
+        </Button></Link>
+        <Link to='/calendar'><Button
+          borderRadius="1.75rem"
+          className="bg-blue-200 dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+          >
+          Your Event Calendar
+        </Button></Link>
       </div>
-    </Link>
 
       <h1 className="w-fit mx-auto pt-10 text-7xl font-bold">
         Upcoming Events In The City
